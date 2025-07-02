@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "embodiedmae"
+version = "0.1.0"
+description = "Offcial implementation of EmbodiedMAE."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Zibin Dong", email = "zibindong@outlook.com" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "torch>=2.1",
+    "transformers",
+    "numba",
+    "termcolor",
+    "einops",
+]
+
+[project.optional-dependencies]
+pc = [
+    "pytorch3d>=0.7; python_version>='3.9'",
+]
+
+[project.urls]
+Repository = "https://github.com/ZibinDong/embodiedmae"
+
+[tool.setuptools]
+packages = ["embodied_mae"]

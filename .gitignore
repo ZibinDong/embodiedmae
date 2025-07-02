@@ -1,0 +1,13 @@
+__pycache__/
+diffusion_policy/
+dataset/
+embodied_mae/codecs.py
+embodied_mae/utils.py
+convert*
+*.mp4
+*.log
+upload_model.py
+depth.py
+rgbd*
+*.txt
+PKG-INFO
